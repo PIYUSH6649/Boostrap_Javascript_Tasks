@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Task 2</title>
+  </head>
+  <body>
+    <h1>Enter a String</h1>
+    <h1>
+      <input type="text" id="typeInput" style="height: 20px; width: 100px" />
+    </h1>
+    <button style="height: 35px; width: 70px" onclick="press()">Convert</button>
+    <h1>Ouput:</h1>
+    <h1 id="answer"></h1>
+    <script>
+      function press() {
+        let a = document.getElementById("typeInput").value;
+        function sortString(a) {
+          //   var arr = a.split('');
+          //   var sorted = arr.sort();
+          //   return sorted.join('');
+          return a.split("").sort().join("");
+        }
+        document.getElementById("answer").innerHTML = sortString(a);
+      }
+    </script>
+  </body>
+</html>
